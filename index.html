@@ -15,7 +15,18 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+     <picture>
+        <source srcset="./images/fall-dog-1200.jpg" media="(min-width:1200px)">
+        <source srcset="./images/fall-dog-1200-960x640.jpg" media="(min-width:900px)">
+        <source srcset="./images/fall-dog-1200-900x720.jpg" media="(min-width:720px)">
+        <source srcset="./images/fall-dog-1200-640x480.jpg" media="(max-width:640px)">
+        <source srcset="./images/fall-dog-1200-480x320.jpg" media="(max-width:480px)">
+        <source srcset="./images/fall-dog-900-720x480.jpg" media="(min-width:900px)">
+        <source srcset="./images/fall-dog-720-480x320.jpg" media="(min-width:720px)">
+        <source srcset="./images/fall-dog-640-480x320.jpg" media="(max-width:640px)">
+        <source srcset="./images/fall-dog-480-320x240.jpg" media="(max-width:480px)">
+        <img src="./images/fall-dog-1200.jpg" alt="A dog in the fall"/>
+      </picture>
 
   </header>
 </body>
